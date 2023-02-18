@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 
     // start doom
     printf("Starting D_DoomMain\r\n");
-    
+
 	dg_Create();
 
 	D_DoomMain ();
