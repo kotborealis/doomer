@@ -126,7 +126,8 @@ void DG_DrawFrame()
   int fd_draw = open("/_wasmer/dev/fb0/draw", O_RDWR);
   assert(fd_draw > 0);
   lseek(fd_draw, 0, SEEK_SET);
-  write(fd_draw, DG_ScreenBuffer, 1);
+  int fb = 0;
+  write(fd_draw, &fb, 1);
 }
 
 void DG_SleepMs(uint32_t ms)
