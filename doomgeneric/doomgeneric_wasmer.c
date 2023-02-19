@@ -97,8 +97,6 @@ void DG_DrawFrame()
 
   ssize_t i = 0;
   while(i < length) {
-    printf("Got some inputs %d %d\n", input_buffer[i], input_buffer[i+1]);
-
     char event = input_buffer[i];
 
     if(event == KEY_PRESS || event == KEY_RELEASE) {
